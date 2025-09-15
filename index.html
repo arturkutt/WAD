@@ -91,24 +91,26 @@
     </section>
 
     <section>
-        <br>
-        <form>
-            <label for="courseTitle"><strong>Course Title:</strong></label><br>
-            <input type="text" id="courseTitle" name="courseTitle" required><br>
 
-            <label for="semester"><strong>Semester:</strong></label><br>
+        <form action="https://some_endpoint" method="post">
+            <label for="courseTitle">Course Title:</label>
+            <input type="text" id="courseTitle" name="courseTitle" required/>
+            <br /><br>
+
+            <label for="semester">Semester:</label>
             <select id="semester" name="semester" required>
-                <option value="">Select a semester</option>
                 <option value="fall">Fall</option>
                 <option value="spring">Spring</option>
-            </select><br>
+            </select>
+            <br /><br>
 
             <label><strong>Attendance:</strong></label><br>
             <input type="radio" id="virtual" name="attendance" value="virtual" required>
             <label for="virtual">Virtual attendance</label><br>
 
             <input type="radio" id="physical" name="attendance" value="physical">
-            <label for="physical">Physical attendance</label><br>
+            <label for="physical">Physical attendance</label>
+            <br /><br>
 
             <input type="submit" value="Submit">
         </form>
